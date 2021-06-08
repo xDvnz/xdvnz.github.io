@@ -1,30 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="styles.css" rel="stylesheet">
-  <script defer src="script.js"></script>
-  <title>Clock</title>
-</head>
-<body>
-  <div class="clock">
-    <div class="hand hour" data-hour-hand></div>
-    <div class="hand minute" data-minute-hand></div>
-    <div class="hand second" data-second-hand></div>
-    <div class="number number1">1</div>
-    <div class="number number2">2</div>
-    <div class="number number3">3</div>
-    <div class="number number4">4</div>
-    <div class="number number5">5</div>
-    <div class="number number6">6</div>
-    <div class="number number7">7</div>
-    <div class="number number8">8</div>
-    <div class="number number9">9</div>
-    <div class="number number10">10</div>
-    <div class="number number11">11</div>
-    <div class="number number12">12</div>
-  </div>
-</body>
+<html>
+    <body>
+        <h1>Hai cantikkkk</h1>
+        <img src="https://media1.giphy.com/media/a9QBC2aru310k/giphy.gif?cid=790b7611533f054e8ed4a6db457afc4597adb3b40abf1d8b&rid=giphy.gif&ct=g">
+        <h1>Mau ga jadi pacarku?</h1>
+        <button id='btn_mau' onclick='alert("I <3 U")'>Mau</button>&nbsp;
+        <button id='btn_gamau' onclick='gamau(this)' style='position:absolute'>Gamau</button>
+    </body>
+    <script>
+        function gamau(id){
+            var mau = document.getElementById('btn_mau');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+mau.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+    </script>
 </html>
